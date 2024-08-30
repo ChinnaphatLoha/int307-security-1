@@ -60,9 +60,7 @@ The way businesses manage and access information has evolved significantly over 
 - **1950s: Server-Centric Era**
   - Central servers performed all the work, with terminals connected to them for input and output.
 - **1990s: Network-Centric Era**
-
   - Personal computers (PCs) and servers became connected to the internet, enabling data sharing across networks.
-
 - **21st Century: Information-Centric Era (We Are Here)**
   - Today, information is accessible across all devices, and the focus has shifted to securing information wherever it is stored or accessed.
 
@@ -98,6 +96,59 @@ High Availability (HA) is about ensuring that systems remain operational with mi
 4. **Serviceability:**
    - **Design:** Make the system easy to maintain and repair, with clear documentation and monitoring tools.
    - **Example:** Using modular designs that allow for quick replacement of faulty components without affecting the whole system.
+
+---
+
+## Security Threats
+
+As part of BCM, addressing security threats is essential for protecting your IT systems and data. Here’s a look at common threats and how to prevent them:
+
+### Preventing Computer Viruses
+
+- **Viruses** spread when infected files are accessed. Macro viruses, for example, attach themselves to documents and spread when these documents are opened.
+- **Worms** are a type of virus that spread automatically from one computer to another without human intervention.
+- **Anti-virus software** helps by scanning files and disks to detect and remove viruses.
+- **E-mail** is a common source of viruses. Always check attachments and use filtering programs to clean incoming e-mail.
+
+### Preventing Denial of Service (DoS) Attacks
+
+- **DoS Attacks** flood a network with excessive messages, preventing normal users from accessing services.
+- **Distributed DoS (DDoS)** attacks come from multiple computers and are harder to prevent. They involve a network of compromised machines sending messages to overwhelm a target.
+- **Preventive Measures:**
+  - Use **traffic filtering** to verify the source of incoming messages.
+  - Implement **traffic limiting** to manage high volumes of incoming packets.
+  - Employ **traffic anomaly detectors** to identify and block abnormal patterns.
+
+### Intrusion Prevention
+
+Different types of intruders pose various threats:
+
+- **Casual Intruders:** Have limited knowledge and use basic tools.
+- **Security Experts (Hackers):** Seek challenges or to demonstrate their skills.
+- **Crackers:** Cause damage and break into systems with malicious intent.
+- **Professional Hackers:** Engage in espionage or fraud for specific purposes.
+- **Insiders:** Employees who misuse their access to information.
+
+**Preventing Intrusion** involves:
+
+- Routinely testing and updating security systems.
+- Keeping extremely sensitive data offline, isolated from the network.
+- Developing a **security policy** that outlines:
+  - Critical assets and necessary controls.
+  - Employee responsibilities.
+  - Regular training and security tests.
+
+### Disaster Recovery
+
+**High Availability (HA)** and **Disaster Recovery (DR)** ensure systems can recover and continue functioning after a disaster.
+
+### Designing a Disaster-Tolerant Architecture
+
+- **Geographic Diversity:** Protect data and systems by spreading them across different locations.
+- **Off-line Data Replication:** Store backup data at a separate site, but recovery might take time.
+- **Online Data Replication:** Continuously copy data to a separate site, with two techniques:
+  - **Synchronous Replication:** Ensures all data copies are updated before proceeding.
+  - **Asynchronous Replication:** Updates remote data without waiting for the primary site.
 
 ---
 
